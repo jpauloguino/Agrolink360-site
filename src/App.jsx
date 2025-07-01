@@ -74,28 +74,28 @@ function App() {
   const projetosExecutados = [
     {
       id: 1,
-      titulo: "Fazenda São José - SP",
+      titulo: "Fazenda Sertãozinho - Patos de Minas/MG",
       categoria: "Agronegócio",
-      descricao: "Sistema completo de CFTV com 45 câmeras IP, monitoramento 24/7 e energia solar off-grid",
+      descricao: "Sistema completo de monitoramento com 6 câmeras IA, alarme sem fio e automação de refletores",
       imagem: projetoFazenda,
       status: "Concluído",
       ano: "2024",
-      detalhes: ["45 câmeras Hikvision 4K", "Sistema off-grid com painéis solares", "Monitoramento remoto 24/7", "Cobertura de 500 hectares"]
+      detalhes: ["6 câmeras Hikvision com IA", "Sistema de alarme sem fio", "Automação de refletores", "Central AXPRO", "Speed dome 4K 30x zoom", "WiFi mesh 2.4/5GHz", "Starlink instalado", "Cobertura 10.000+ m²"]
     },
     {
       id: 2,
-      titulo: "Shopping Center ABC - SP",
-      categoria: "Comercial",
-      descricao: "Modernização completa do sistema de segurança com IA e análise comportamental",
+      titulo: "Fazenda Peri-Peri - Região de Patos de Minas/MG",
+      categoria: "Agronegócio",
+      descricao: "Sistema avançado com 48 câmeras 2K, speed dome e NVR com IA embarcada",
       imagem: projetoComercial,
       status: "Concluído",
       ano: "2024",
-      detalhes: ["120 câmeras com IA integrada", "Análise comportamental", "Controle de acesso inteligente", "Central de monitoramento"]
+      detalhes: ["48 câmeras Hikvision 2K", "Speed dome FullHD 25x zoom IR 150m", "NVR com IA embarcada", "Detecção de veículos e placas", "WiFi longo alcance", "Segurança em Pivô 40 hectares", "Reconhecimento facial", "Banco de dados integrado"]
     },
     {
       id: 3,
-      titulo: "Complexo Industrial XYZ - SP",
-      categoria: "Industrial",
+      titulo: "Projeto Comercial - Região de Patos de Minas/MG",
+      categoria: "Comercial",
       descricao: "Segurança perimetral avançada com detecção de intrusão e rastreamento automático",
       imagem: projetoIndustrial,
       status: "Concluído",
@@ -274,7 +274,7 @@ function App() {
               <div className="text-gray-600">Anos de Experiência</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-green-600 mb-2">500+</div>
+              <div className="text-4xl font-bold text-green-600 mb-2">50+</div>
               <div className="text-gray-600">Projetos Realizados</div>
             </div>
             <div>
@@ -887,7 +887,7 @@ function App() {
                 </li>
                 <li className="flex items-center">
                   <MapPin className="w-4 h-4 mr-2" />
-                  São Paulo, SP
+                  Patos de Minas - MG
                 </li>
               </ul>
             </div>
