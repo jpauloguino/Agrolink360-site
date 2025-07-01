@@ -92,16 +92,7 @@ function App() {
       ano: "2024",
       detalhes: ["48 câmeras Hikvision 2K", "Speed dome FullHD 25x zoom IR 150m", "NVR com IA embarcada", "Detecção de veículos e placas", "WiFi longo alcance", "Segurança em Pivô 40 hectares", "Reconhecimento facial", "Banco de dados integrado"]
     },
-    {
-      id: 3,
-      titulo: "Projeto Comercial - Região de Patos de Minas/MG",
-      categoria: "Comercial",
-      descricao: "Segurança perimetral avançada com detecção de intrusão e rastreamento automático",
-      imagem: projetoIndustrial,
-      status: "Concluído",
-      ano: "2023",
-      detalhes: ["80 câmeras perimetrais", "Detecção de intrusão por IA", "Rastreamento automático", "Integração com alarmes"]
-    }
+
   ]
 
   const projetosAndamento = [
@@ -123,49 +114,41 @@ function App() {
         "Projeto total: 3 fases planejadas"
       ]
     },
-    {
-      id: 5,
-      titulo: "Centro Comercial Novo Mundo - RJ",
-      categoria: "Comercial",
-      descricao: "Instalação de sistema integrado de segurança e controle de acesso",
-      imagem: projetoAndamento1,
-      status: "Em Andamento",
-      previsao: "Fevereiro 2025",
-      progresso: 40,
-      detalhes: ["95 câmeras em instalação", "Sistema de controle de acesso", "Integração com app mobile", "Previsão: 30 dias"]
-    }
   ]
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Header */}
       <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-gray-900/98 backdrop-blur-md shadow-lg border-b border-gray-700' : 'bg-transparent'
       }`}>
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <img src={logoAgroLink360} alt="AgroLink360" className="h-12 w-auto" />
+              <img src={logoAgroLink360} alt="AgroLink360" className="h-20 w-auto" />
             </div>
             
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              <button onClick={() => scrollToSection('inicio')} className="text-gray-700 hover:text-blue-600 transition-colors">
+              <button onClick={() => scrollToSection('inicio')} className={`transition-colors ${isScrolled ? 'text-white hover:text-green-400' : 'text-gray-700 hover:text-blue-600'}`}>
                 Início
               </button>
-              <button onClick={() => scrollToSection('sobre')} className="text-gray-700 hover:text-blue-600 transition-colors">
+              <button onClick={() => scrollToSection('sobre')} className={`transition-colors ${isScrolled ? 'text-white hover:text-green-400' : 'text-gray-700 hover:text-blue-600'}`}>
                 Sobre
               </button>
-              <button onClick={() => scrollToSection('servicos')} className="text-gray-700 hover:text-blue-600 transition-colors">
+              <button onClick={() => scrollToSection('servicos')} className={`transition-colors ${isScrolled ? 'text-white hover:text-green-400' : 'text-gray-700 hover:text-blue-600'}`}>
                 Serviços
               </button>
-              <button onClick={() => scrollToSection('projetos')} className="text-gray-700 hover:text-blue-600 transition-colors">
+              <button onClick={() => scrollToSection('projetos')} className={`transition-colors ${isScrolled ? 'text-white hover:text-green-400' : 'text-gray-700 hover:text-blue-600'}`}>
                 Projetos
               </button>
-              <button onClick={() => scrollToSection('tecnologia')} className="text-gray-700 hover:text-blue-600 transition-colors">
+              <button onClick={() => scrollToSection('tecnologia')} className={`transition-colors ${isScrolled ? 'text-white hover:text-green-400' : 'text-gray-700 hover:text-blue-600'}`}>
                 Tecnologia
               </button>
-              <button onClick={() => scrollToSection('contato')} className="text-gray-700 hover:text-blue-600 transition-colors">
+              <button onClick={() => scrollToSection('instagram')} className={`transition-colors ${isScrolled ? 'text-white hover:text-green-400' : 'text-gray-700 hover:text-blue-600'}`}>
+                Instagram
+              </button>
+              <button onClick={() => scrollToSection('contato')} className={`transition-colors ${isScrolled ? 'text-white hover:text-green-400' : 'text-gray-700 hover:text-blue-600'}`}>
                 Contato
               </button>
               <Button onClick={openWhatsApp} className="bg-green-600 hover:bg-green-700">
@@ -202,6 +185,9 @@ function App() {
                 <button onClick={() => scrollToSection('tecnologia')} className="text-left text-gray-700 hover:text-blue-600">
                   Tecnologia
                 </button>
+                <button onClick={() => scrollToSection('instagram')} className="text-left text-gray-700 hover:text-blue-600">
+                  Instagram
+                </button>
                 <button onClick={() => scrollToSection('contato')} className="text-left text-gray-700 hover:text-blue-600">
                   Contato
                 </button>
@@ -237,8 +223,8 @@ function App() {
             </p>
             
             <p className="text-lg text-white mb-10 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
-              Especialistas em projetos de CFTV de alta performance com inteligência artificial, 
-              desenvolvidos sob medida para agronegócio e comércio.
+              Especialistas em projetos de CFTV de alta performance com inteligência artificial e 
+              soluções WiFi corporativo e público de alto desempenho, desenvolvidos sob medida para agronegócio e comércio.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -725,6 +711,95 @@ function App() {
         </div>
       </section>
 
+      {/* WiFi Section */}
+      <section className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              Especialistas em WiFi Corporativo
+            </h2>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              Conectividade de Alto Desempenho para Empresas e Espaços Públicos
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <Wifi className="w-8 h-8 text-blue-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">WiFi 6E Ubiquiti</h3>
+                  <p className="text-gray-600">
+                    Equipamentos U7 Pro e U7 Outdoor para máxima performance e cobertura
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <Globe className="w-8 h-8 text-green-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">WiFi Público</h3>
+                  <p className="text-gray-600">
+                    Soluções para hotéis, restaurantes, clubes e espaços de grande movimento
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <Building className="w-8 h-8 text-blue-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">WiFi Corporativo</h3>
+                  <p className="text-gray-600">
+                    Redes empresariais seguras com gerenciamento centralizado e alta disponibilidade
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start space-x-4">
+                <Target className="w-8 h-8 text-green-600 mt-1 flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Site Survey Profissional</h3>
+                  <p className="text-gray-600">
+                    Análise técnica completa para dimensionamento perfeito da sua rede
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <h3 className="text-2xl font-bold mb-6 text-center">Nossos Diferenciais WiFi</h3>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span>Cobertura até 50.000+ m²</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span>Equipamentos Ubiquiti certificados</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span>Gerenciamento via UniFi Controller</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span>Suporte técnico especializado</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <span>Garantia e manutenção incluídas</span>
+                </div>
+              </div>
+              
+              <Button onClick={openWhatsApp} className="w-full mt-6 bg-blue-600 hover:bg-blue-700">
+                <Wifi className="w-4 h-4 mr-2" />
+                Solicitar Site Survey
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-slate-50">
         <div className="container mx-auto px-4">
@@ -806,6 +881,61 @@ function App() {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram Section */}
+      <section id="instagram" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              Siga-nos no Instagram
+            </h2>
+            <p className="text-xl text-gray-700 leading-relaxed">
+              Acompanhe nossos projetos, dicas de segurança e novidades tecnológicas
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <Card className="hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="bg-gradient-to-br from-blue-500 to-green-500 p-6 text-white text-center">
+                <Camera className="w-12 h-12 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">Projetos em Destaque</h3>
+                <p className="opacity-90">Veja nossos projetos mais recentes e impressionantes</p>
+              </div>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="bg-gradient-to-br from-green-500 to-blue-500 p-6 text-white text-center">
+                <Lightbulb className="w-12 h-12 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">Dicas de Segurança</h3>
+                <p className="opacity-90">Conteúdo educativo sobre segurança eletrônica</p>
+              </div>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow overflow-hidden">
+              <div className="bg-gradient-to-br from-blue-600 to-green-600 p-6 text-white text-center">
+                <TrendingUp className="w-12 h-12 mx-auto mb-4" />
+                <h3 className="text-xl font-bold mb-2">Novidades Tech</h3>
+                <p className="opacity-90">As últimas tendências em tecnologia de segurança</p>
+              </div>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <Button 
+              size="lg" 
+              onClick={() => window.open('https://instagram.com/agrolink360', '_blank')}
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-lg px-8 py-6"
+            >
+              <Camera className="w-5 h-5 mr-2" />
+              @agrolink360
+            </Button>
+            
+            <p className="text-gray-600 mt-4">
+              Mais de 15 posts sobre tecnologia, projetos e inovação em segurança
+            </p>
           </div>
         </div>
       </section>
