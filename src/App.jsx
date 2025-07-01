@@ -109,18 +109,18 @@ function App() {
       id: 4,
       titulo: "Clube Caiçaras - Patos de Minas/MG",
       categoria: "Lazer e Entretenimento",
-      descricao: "Projeto completo de CFTV, WiFi público e segurança perimetral em complexo de 50.000+ m²",
+      descricao: "Projeto de grande escala: CFTV, WiFi público e segurança perimetral em complexo de 50.000+ m² (Fase 1 de 3)",
       imagem: projetoAndamento1,
       status: "Em Andamento",
-      previsao: "Fevereiro 2025",
-      progresso: 75,
+      previsao: "Março 2025",
+      progresso: 40,
       detalhes: [
-        "17 câmeras Hikvision (4MP/5MP)",
+        "17 câmeras Hikvision (4MP/5MP) - Fase 1",
         "WiFi 6E Ubiquiti U7 Pro/Outdoor", 
         "Cobertura completa 50.000+ m²",
-        "AcuSense IA + ColorVu 24h",
+        "Site survey WiFi em andamento",
         "Speed Dome 32x zoom",
-        "Fisheye 360° sem pontos cegos"
+        "Projeto total: 3 fases planejadas"
       ]
     },
     {
