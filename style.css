@@ -1,0 +1,41 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+}
+header {
+  background: #101820;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+}
+nav a {
+  color: #00e0ff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+nav a.cliente-btn {
+  font-weight: bold;
+  color: #00ff88;
+}
+section {
+  padding: 2rem;
+}
+#whatsapp-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+#whatsapp-chat a {
+  background: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+}
