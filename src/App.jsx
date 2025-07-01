@@ -107,14 +107,21 @@ function App() {
   const projetosAndamento = [
     {
       id: 4,
-      titulo: "Agropecuária Vale Verde - MG",
-      categoria: "Agronegócio",
-      descricao: "Implementação de sistema de segurança em propriedade de 1.200 hectares",
-      imagem: projetoAndamento2,
+      titulo: "Clube Caiçaras - Patos de Minas/MG",
+      categoria: "Lazer e Entretenimento",
+      descricao: "Projeto completo de CFTV, WiFi público e segurança perimetral em complexo de 50.000+ m²",
+      imagem: projetoAndamento1,
       status: "Em Andamento",
-      previsao: "Março 2025",
-      progresso: 65,
-      detalhes: ["60 câmeras planejadas", "Sistema híbrido solar/elétrico", "Monitoramento de gado", "Previsão: 45 dias"]
+      previsao: "Fevereiro 2025",
+      progresso: 75,
+      detalhes: [
+        "17 câmeras Hikvision (4MP/5MP)",
+        "WiFi 6E Ubiquiti U7 Pro/Outdoor", 
+        "Cobertura completa 50.000+ m²",
+        "AcuSense IA + ColorVu 24h",
+        "Speed Dome 32x zoom",
+        "Fisheye 360° sem pontos cegos"
+      ]
     },
     {
       id: 5,
